@@ -1,0 +1,60 @@
+body {
+	background-color:#121212;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	
+}
+	#logo {
+		width:200px;
+		margin-top:30px;
+	}
+	#all {
+		background-color:#202020;
+		margin:auto;
+		color:white;
+		width:600px;
+	}
+	p {
+  text-transform: uppercase;
+}
+tr {
+	background-color:;
+	border-radius:25px;
+	padding:20px;
+	transition:200ms ease;	
+}
+tr:hover {
+	box-shadow: 0px 0px 3px white;
+	transition:200ms ease;
+}
+
+#t1 {
+	margin: 30px;
+}
+.si {
+	width:30px;
+	height:auto;
+}
+button {
+	background-color:#2b2b2b;
+	border:0;
+	border-radius:25px;
+}
+@media screen and (max-width: 800px) {
+  #logo {
+    width: 50px;
+  }
+  p {
+	  font-size:21pt;
+  }
+}
+@media screen and (max-width: 600px) {
+  #logo {
+    width: 70px;
+  }
+  p {
+	  font-size:17pt;
+	  text-align:left;
+	  }
+}
