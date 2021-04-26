@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}       
+html, body{
+    background-color:#121212;
+    color: white;
+    margin:0;
+    padding:0;
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    color: white;
+    background-color: black;
+}
+
+.InUp{
+    animation-duration: 4.30s;  
+    animation-fill-mode:forwards;  
+    animation-name: InUp; 
+}
+ 
+@keyframes InUp { 
+    0% {                
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {              
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.InDown{
+    animation-duration: 3.5s;  
+    animation-fill-mode:forwards;  
+    animation-name: InDown; 
+}
+ 
+@keyframes InDown {
+
+    0%{    
+        
+       opacity: 0.7;           
+        
+    }
+    100% {              
+        
+        opacity: 1;
+    }
+   
+}
+
+
+a { 
+    color:white;
+    /* outline: 1px solid green; */
+    text-decoration: none;
+  }
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+.a1{
+    padding: 20px;
+    background-color: 
+}
+.a1:hover{
+    text-decoration: none;
+    /* outline: 1px solid yellow; */
+    transform: translateY(100%);
+    background-color: grey;
+    border: 15px solid grey;
+    border-radius: 5px;
+    
+}
+
+
+.search1{
+    margin-top: 100px;
+    margin-left: 71%;
+    position: absolute;
+    
+   }
+
+.back2{
+    margin-top: 100px;
+    margin-left: 15%;
+    position: absolute;
+}
+
+.search1 input, .search1 button, .back2 button{
+    outline: none;
+    border: none;
+    background-color: rgb(74, 74, 77);
+    border-radius: 3px;
+    height: 30px;
+   }
+
+.search1 button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(74, 74, 77);
+    font-weight: bold;
+  }
+
+.div1{
+    margin-left: 15%;
+    /* outline: 1px solid yellow; */
+    margin-top: 10%;
+    position: absolute;
+    background-color: rgb(74, 74, 77);
+    height: 50%;
+    width: 70%;
+    
+}
+
+.div2{
+    height: 100%;
+    width: 20%;
+    float:right;
+    
+}
+
+.div3{
+    height: 25%;
+    width: 100%;
+    text-align:center;
+    font-size: 90%;
+    transition: 0.3s;
+    
+    
+}
+
+
+.div4{
+    height: 100%;
+    width: 80%;
+    float: left;
+    /* outline: 1px solid yellow; */
+
+}
+
+.div5{
+    margin-left: 15%;
+    margin-top: 40%;
+    position:absolute;
+    width: 70%;
+    height: 50%;
+    position:flex;
+}
+
+.div6{
+    width: 20%;
+    text-align: center;
+    padding: 12px;
+    transition: 0.3s;
+    height: 70%;
+    /* outline: 1px solid yellow; */
+}
+
+
+.img1{
+    height: 80%;
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+
+
+
+.div3:hover{
+    background-color: rgb(54, 54, 61);
+    
+    
+}
+.div6:hover{
+    background-color: rgb(54, 54, 61);
+    border-radius: 10px;
+    
+}
+
+.img2{
+    height: 100%;
+    width: 100%;
+
+}
+
+.img3{
+    height: 80%;
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+
+.active{
+    background-color: grey;
+    border: 15px solid grey;
+    border-radius: 5px;
+}
+
+.dropbtn{
+    background-color: rgb(74, 74, 77);
+  
+    color: white;
+    border: none;
+    z-index: 1000;
+    
+    font-family: FontAwesome;
+   
+}
+
+.dropdown{
+
+}
+
+
+.dropdown-content { 
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 72px;
+    background-color: rgb(74, 74, 77);  
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+   z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+
+footer{
+    background-color: rgb(92, 92, 95);
+    height: 30%;
+    width: 100%;
+    position:absolute;
+    margin-top:  100%;
+}
+
+hr{
+    background-color: aliceblue;
+    width: 80%;
+}
+nav{
+    display: inline-flex;
+}
+
+/*-------------------------------------------------------------------------------------*/
+    #logo {
+        width:200px;
+        margin-top:30px;
+    }
+    #all {
+        background-color:#202020;
+        margin:auto;
+        top: auto;
+        bottom: auto;
+        color:white;
+        width:60%;
+    }
+    p {
+  text-transform: uppercase;
+}
+button {
+    background-color:#2b2b2b;
+    border:0;
+    border-radius:25px;
+}
+@media screen and (max-width: 800px) {
+  #logo {
+    width: 50px;
+  }
+  p {
+      font-size:21pt;
+  }
+}
+@media screen and (max-width: 600px) {
+  #logo {
+    width: 70px;
+  }
+  p {
+      font-size:17pt;
+      text-align:left;
+      }
+}
+
+
+
+/*    Log/reg forms below
+-----------------------------------------------------*/
+
+input[type=text], input[type=password], [type=email] {
+    background-color: #071639;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+button[type=submit] {
+  font-size: 24px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 18px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+.container{
+    display: inline-block;
+    padding-right: 130px;
+    padding-left: 130px;
+}
+.container input {
+    color: ;
+}
+.log_reg{
+    width: 100%;
+    display: flex;
+}
+
+.log_reg ul{
+    margin-top: 10%;
+    list-style-type: none;
+    display: inline-flex;
+    margin-left: auto; 
+    margin-right: 20px;
+}
+.log_reg ul li a{
+    margin: 10px;
+    padding: 7px;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid black;
+    box-shadow: 2px 3px white;
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        2px 1px 0 black,
+        -1px 2px 0 black;
+    ;
+}
+.log_reg ul li a:hover{
+    text-shadow: 
+        -1px -1px 0 #F1C40F,
+        1px -1px 0 #F1C40F,
+        2px 1px 0 #F1C40F,
+        -1px 2px 0 #F1C40F;
+    ;
+    color: black;
+    box-shadow: 3px 5px 7px #F1C40F;
+    background-color: white;
+}
+
+
+/*Navigation bar below
+-----------------------------------------------------*/
+nav{
+    width: 100%;
+    display: inline-flex;
+    background-color: white;
+}
+nav a{
+    text-decoration: none;
+    color: black; /*#F4D03F;*/
+    padding: 20px;
+    font-size: 25px;
+}
+
+nav a:hover{
+    color: #F1C40F;
+    background-color: black;
+}
+/*-----------------------------------------------------*/
+

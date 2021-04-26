@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SingIn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="menuStyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+  <header>
+      <div class="log_reg">
+        <img src="img/banana.png">
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="subs.html">Subscription</a>
+        <a href="movies.html">Movies</a>
+        <!-- <a href="categ.html">Categories</a>
+        <a href="about.html">About Us</a> -->
+      </nav>
+  </header>
+  <div id="all" align="center">
+      <img id="logo" src="img/logo_without_text_and_tagline.png" align='center'>
+      <br>
+      <br>
+      <h2>Registration Form</h2>
+      <form>
+      <div class="container">
+        <input type="text" placeholder="Enter your first name" name="fnam" required>
+        <input type="text" placeholder="Enter your last name" name="lnam" required>
+        <input type="email" placeholder="Enter your mail" name="email" required>
+        <input type="password" placeholder="Enter Password" name="psw1" required>
+        <input type="password" placeholder="Enter Password Again" name="psw2" required>
+        <input type="text" placeholder="Enter your age" name="age">
+        <button type="submit" onclick="regist()">Register</button>
+      </div>
+    </form>
+  </div>
+  </body>
+</html>
