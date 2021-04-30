@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="menuStyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
   <header>
@@ -30,17 +31,16 @@
       <br>
       <br>
       <h2>Registration Form</h2>
-      <form>
-      <div class="container">
+      <form class="container" onsubmit="validation()" novalidate>
+        <h1>Sign up</h1><br />
         <input type="text" placeholder="Enter your first name" name="fnam" required>
         <input type="text" placeholder="Enter your last name" name="lnam" required>
-        <input type="email" placeholder="Enter your mail" name="email" required>
-        <input type="password" placeholder="Enter Password" name="psw1" required>
-        <input type="password" placeholder="Enter Password Again" name="psw2" required>
+        <input type="email" placeholder="Enter your Email" name="email" required> 
+        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+        <input type="password" placeholder="Enter Password Again" name="password" id="password2" required>
         <input type="text" placeholder="Enter your age" name="age">
         <button type="submit" onclick="regist()">Register</button>
-      </div>
-    </form>
+      </form>
   </div>
   </body>
 </html>
